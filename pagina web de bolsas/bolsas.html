@@ -1,0 +1,104 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Bolsas Elegance</title>
+    <link rel="stylesheet" href="stylo.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">👜 Aura bolsas</div>
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="carrito">
+            🛒 Carrito: <span id="contador">0</span>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-texto">
+            <h1>Bolsas con Estilo</h1>
+            <p>Encuentra las mejores bolsas modernas y elegantes.</p>
+            <button onclick="mostrarMensaje()">Comprar Ahora</button>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="productos" id="productos">
+
+        <h2>Nuestras Bolsas</h2>
+
+        <div class="contenedor-productos">
+
+            <!-- PRODUCTO 1 -->
+            <div class="producto">
+                <img src="c:\Users\core i7\OneDrive\Documents\pagina web de bolsas\img\Army kpop bag.jfif">
+                <h3>Bolsa Negra</h3>
+                <p>$850 MXN</p>
+                <button onclick="agregarCarrito()">Agregar al carrito</button>
+            </div>
+
+            <!-- PRODUCTO 2 -->
+            <div class="producto">
+                <img src="c:\Users\core i7\OneDrive\Documents\pagina web de bolsas\img\descargar (18).jfif">
+                <h3>Bolsa Beige</h3>
+                <p>$950 MXN</p>
+                <button onclick="agregarCarrito()">Agregar al carrito</button>
+            </div>
+
+            <!-- PRODUCTO 3 -->
+            <div class="producto">
+                <img src="c:\Users\core i7\OneDrive\Documents\pagina web de bolsas\img\kpop jeans bag tsuki billlie photocard.jfif">
+                <h3>Bolsa Rosa</h3>
+                <p>$780 MXN</p>
+                <button onclick="agregarCarrito()">Agregar al carrito</button>
+            </div>
+
+            <!-- PRODUCTO 4 -->
+            <div class="producto">
+                <img src="c:\Users\core i7\OneDrive\Documents\pagina web de bolsas\img\SHEIN.jfif">
+                <h3>Bolsa Blanca</h3>
+                <p>$1,100 MXN</p>
+                <button onclick="agregarCarrito()">Agregar al carrito</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- OFERTAS -->
+    <section class="ofertas" id="ofertas">
+        <h2>🔥 Ofertas Especiales</h2>
+        <p>Compra 2 bolsas y recibe un 15% de descuento.</p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+
+        <form>
+            <input type="text" placeholder="Tu nombre">
+            <input type="email" placeholder="Tu correo">
+            <textarea placeholder="Escribe un mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Elegance Bags | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>

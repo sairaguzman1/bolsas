@@ -1,0 +1,243 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+}
+
+/* HEADER */
+
+header{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#f7c6d9;
+}
+
+.carrito{
+    background:#f79bbe;
+    color:black;
+    padding:10px 15px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+    background:url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-texto{
+    background:rgba(0,0,0,0.5);
+    padding:40px;
+    border-radius:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.hero button{
+    padding:15px 30px;
+    border:none;
+    background:#f09c9c;
+    font-size:18px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    background:white;
+}
+
+/* PRODUCTOS */
+
+.productos{
+    padding:70px 40px;
+    text-align:center;
+}
+
+.productos h2{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.contenedor-productos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:30px;
+}
+
+.producto{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 15px #f09c9c);
+    transition:0.3s;
+}
+
+.producto:hover{
+    transform:translateY(-10px);
+}
+
+.producto img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.producto h3{
+    margin:15px 0;
+}
+
+.producto p{
+    font-size:20px;
+    color:#e91e63;
+    margin-bottom:15px;
+}
+
+.producto button{
+    margin-bottom:20px;
+    padding:12px 20px;
+    border:none;
+    background:#f09c9c;
+    color:white;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.producto button:hover{
+    background:#fc6c6c;
+    color:#fc6c6c;
+}
+
+/* OFERTAS */
+
+.ofertas{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.ofertas h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+/* CONTACTO */
+
+.contacto{
+    padding:70px 20px;
+    text-align:center;
+}
+
+.contacto h2{
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    margin:10px 0;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+textarea{
+    height:150px;
+}
+
+form button{
+    padding:15px;
+    border:none;
+    background:#fc6c6c;
+    color:white;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+form button:hover{
+    background:#f7c6d9;
+    color:black;
+}
+
+/* FOOTER */
+
+footer{
+    background:#fc6c6c;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+}
